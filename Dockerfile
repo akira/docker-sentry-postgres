@@ -40,7 +40,7 @@ RUN /bin/sh -c 'echo root:sentry | chpasswd'
 
 # sentry & pg driver
 RUN pip install psycopg2
-RUN pip install sentry
+RUN pip install sentry==dev
 
 # config for sentry
 ADD conf/sentry.conf.py /sentry.conf.py
